@@ -1,0 +1,14 @@
+<h1>Employees Table</h1>
+<hr>
+<table>
+    <tr>
+        <th *ngFor = "let col of headers">
+            {{col}}
+        </th>
+    </tr>
+    <tr *ngFor = "let row of rows">
+        <td *ngFor = "let col of columns">
+            {{row[col]}}
+        </td>
+    </tr>
+</table>
